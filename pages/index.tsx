@@ -11,10 +11,13 @@ export default function Index() {
   if (!data) return <div>Loading...</div>
 
   return (
-    <ul>
-      {data.map((p: Person) => (
-        <PersonComponent key={p.id} person={p} />
-      ))}
-    </ul>
+    <div>
+      <h2>With Docker</h2>
+      <ul>
+        {data.map((p: Person) => (
+          <PersonComponent key={p.id} person={p} />
+        ))}
+      </ul>
+    </div>
   )
 }
